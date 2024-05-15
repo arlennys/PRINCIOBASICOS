@@ -1,0 +1,14 @@
+<button (click)="showMessage = ! showMessage">mostara el mensaje</button>
+
+<div *ngIf="showMessage ; else noMenssage">
+    <h1>Hola mundo</h1>
+</div>
+
+<ng-template #noMenssage>
+    <div>
+        <h1>
+            No mensaje para mostrar
+        </h1>
+    </div>
+</ng-template>
+
